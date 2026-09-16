@@ -1,12 +1,15 @@
-public class Song {private String title;
+public class Song extends MusicItem {
     private String artist;
     private int duration;
+
     public Song(String title, String artist, int duration) {
-        this.title = title;
+        super(title);
         this.artist = artist;
         this.duration = duration;
     }
-    public String getTitle() {
-        return title;
+
+    @Override
+    public void displayInfo() {
+        System.out.println(artist);
     }
 }
