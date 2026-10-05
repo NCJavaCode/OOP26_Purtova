@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Song song = new Song("I Mean it", "G-Eazy", 4);
+        Song song = new Song("I Mean It", "G-Eazy", 4);
         Playlist playlist = new Playlist("Улюблені пісні", 188);
 
         song.displayInfo();
@@ -11,5 +11,6 @@ public class Main {
 
         playlist.displayInfo();
         playlist.aboutInfo();
+        playlist.displayInfo("Назва");
     }
 }
