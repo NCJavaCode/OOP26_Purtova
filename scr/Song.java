@@ -10,6 +10,13 @@ public class Song extends MusicItem {
 
     @Override
     public void displayInfo() {
-        System.out.println(artist);
+        System.out.println("Пісня: " + getName());
+        System.out.println("Виконавець: " + artist);
+        System.out.println("Тривалість: " + duration + " хв");
+    }
+
+    @Override
+    public void aboutInfo() {
+        System.out.println("Це пісня");
     }
 }

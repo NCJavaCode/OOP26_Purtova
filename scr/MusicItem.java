@@ -10,4 +10,6 @@ public abstract class MusicItem {
     }
 
     public abstract void displayInfo();
+
+    public abstract void aboutInfo();
 }
