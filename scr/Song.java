@@ -1,6 +1,7 @@
-public class Song extends MusicItem {
+public class Song extends MusicItem implements Nameable, Informable {
     private String artist;
     private int duration;
+    private String className = "Song";
 
     public Song(String title, String artist, int duration) {
         super(title);
@@ -18,5 +19,15 @@ public class Song extends MusicItem {
     @Override
     public void aboutInfo() {
         System.out.println("Це пісня");
+    }
+
+    @Override
+    public String getClassName() {
+        return className;
+    }
+
+    @Override
+    public void showInfo() {
+        displayInfo();
     }
 }
