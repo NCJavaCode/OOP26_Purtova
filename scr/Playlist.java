@@ -1,4 +1,6 @@
+
 public class Playlist extends MusicItem {
+
     private int songCount;
 
     public Playlist(String name, int songCount) {
@@ -17,7 +19,7 @@ public class Playlist extends MusicItem {
     }
 
     @Override
-    public void aboutInfo() {
+    public void showAboutInfo() {
         System.out.println("Це плейлист");
     }
 }

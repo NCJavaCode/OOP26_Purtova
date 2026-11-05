@@ -1,4 +1,6 @@
+
 public abstract class MusicItem {
+
     private String name;
 
     public MusicItem(String name) {
@@ -11,5 +13,5 @@ public abstract class MusicItem {
 
     public abstract void displayInfo();
 
-    public abstract void aboutInfo();
+    public abstract void showAboutInfo();
 }
