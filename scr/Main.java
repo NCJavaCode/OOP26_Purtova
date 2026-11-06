@@ -1,5 +1,7 @@
+
 public class Main {
     public static void main(String[] args) {
+
         Song song = new Song("I Mean It", "G-Eazy", 4);
         User user = new User("Kira", "purtovakira@gmail.com");
 
@@ -16,7 +18,16 @@ public class Main {
 
         System.out.println();
 
-        MusicItem item = new Playlist("Улюблені пісні", 188);
-        item.displayInfo();
+        MusicItem playlist = MusicItemFactory.createMusicItem(
+                "playlist", "Улюблені пісні", null, 0, 188
+        );
+        playlist.displayInfo();
+
+        System.out.println();
+
+        MusicItem songFromFactory = MusicItemFactory.createMusicItem(
+                "song", "I Mean It", "G-Eazy", 4, 0
+        );
+        songFromFactory.displayInfo();
     }
 }
