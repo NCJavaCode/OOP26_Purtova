@@ -29,5 +29,13 @@ public class Main {
                 "song", "I Mean It", "G-Eazy", 4, 0
         );
         songFromFactory.displayInfo();
+
+        System.out.println();
+
+        President president = President.getInstance("President1");
+        System.out.println(president.getName());
+
+        president = President.getInstance("President2");
+        System.out.println(president.getName());
     }
 }
